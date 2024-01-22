@@ -1,11 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockyes</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/ccf7a664e7.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body class="font-manrope">
+    <header>
+        <!-- nav section -->
+        <section>
+            <nav class="container mx-auto">
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a> Home</a></li>
+                          <li><a> About</a></li>
+                          <li><a> Pages</a></li>
+                          <li><a> Blog</a></li>
+                         
+                          <li><a>Contact</a></li>
+                        </ul>
+                      </div>
+                      <a class=" btn btn-ghost text-xl">Hockey<span class="text-red-700">'</span>S</a>
+
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class=" text-xl menu menu-horizontal px-1">
+                        <li><a class="text-red-600">Home</a></li>
+                        <li><a>
+                            About
+                        </a>                          
+                        </li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end gap-1 py-1">
+                        <img src="Images/search.png" alt="">
+                      <a class="btn text-4xl font-extrabold text-white bg-[#FF4240]">Get Ticket</a>
+                    </div>
+                  </div>
+            </nav>
+        </section>
+        <section class=" mt-8 container mx-auto">
+            <div class="carousel w-full">
+                <div id="slide1" class=" grid items-end  carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute lg:bottom-5 lg:left-5 items-center  lg:tranform-translate-y-1/2">
+                    <a href="#slide4" class="btn btn-circle  text-white bg-black">❮</a> 
+                    <a href="#slide2" class="btn btn-circle text-white bg-black ">❯</a>
+                  </div>
+                  
+                </div> 
+                <!-- <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> -->
+              </div>       
+            </section>      
+    </header>
+    <main>
+        <!-- professional section -->
+        <section class="container mx-auto">
+            <div class="text-center mt-24">
+                <h3 class="text-4xl font-extrabold">Professional Hockeys Club</h3>
+
+                <p class="mt-6 text-xl">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+                
+            </div>
+        </section>
+        <!-- club details section -->
+        <section class="container mx-auto">
+            <div class="grid lg:grid-cols-4 mt-20  space-y-6">
+                <div class="text-center space-y-2">
+                    <div class="radial-progress text-red-600" style="--value:87;" role="progressbar"><span class="text-xl text-black font-extrabold">87%</span></div>
+                    <h4 class="text-xl font-extrabold">Prayer Facility</h4>
+                    <p class="">Amet consectetur. Condimentum <br>dignissim adipiscing .</p>
+                </div>
+                <div class="text-center space-y-2">
+                    <div class="radial-progress text-green-600" style="--value:95;" role="progressbar"><span class="text-xl text-black font-extrabold">95%</span></div>
+                    <h4 class="text-xl font-extrabold">Experienced Coach</h4>
+                    <p class="">Amet consectetur. Condimentum <br>dignissim adipiscing .</p>
+                </div>
+                <div class="text-center space-y-2">
+                    <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar"><span class="text-xl text-black font-extrabold">90%</span></div>
+                    <h4 class="text-xl font-extrabold">Senior Player</h4>
+                    <p class="">Amet consectetur. Condimentum <br>dignissim adipiscing .</p>
+                </div>
+                <div class="text-center space-y-2">
+                    <div class="radial-progress text-blue-400" style="--value:80;" role="progressbar"><span class="text-xl text-black font-extrabold">80%</span></div>
+                    <h4 class="text-xl font-extrabold">Traning Ground</h4>
+                    <p class="">Amet consectetur. Condimentum <br>dignissim adipiscing .</p>
+                </div>               
+            </div>
+        </section>
+
+
+    </main>
+    <footer></footer>
+
     
 </body>
 </html>
